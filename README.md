@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ### Congelar as versões das dependências
 pip freeze > requirements-freezed.txt
 
-### Definir a varável de ambiente do Airflow Home
+### Definir a variável de ambiente do Airflow Home
 export AIRFLOW_HOME=$(pwd)/airflow_home
 
 ### Desabilitar DAGs de exemplo do Airflow com problema

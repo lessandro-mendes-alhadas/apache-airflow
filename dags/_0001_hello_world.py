@@ -1,9 +1,10 @@
 """
 Primeira DAG do Airflow neste projeto!
 """
+from datetime import datetime
+
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-from datetime import datetime, timedelta
 
 # 1. Definição dos argumentos padrão
 default_args = {
@@ -29,4 +30,6 @@ with DAG(
     )
 
 # 4. Definindo a ordem de execução (aqui, apenas uma tarefa)
-task
+# Como só temos uma tarefa, o Pylint está acusando W0104: Statement seems to have no effect
+# Então vamos deixá-la comentada.
+# task

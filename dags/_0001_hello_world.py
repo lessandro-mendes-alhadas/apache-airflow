@@ -1,9 +1,10 @@
 """
 Primeira DAG do Airflow neste projeto!
 """
+from datetime import datetime
+
 from airflow import DAG
 from airflow.operators.bash import BashOperator
-from datetime import datetime, timedelta
 
 # 1. Definição dos argumentos padrão
 default_args = {

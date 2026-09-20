@@ -1,0 +1,13 @@
+# Ambiente Virtual
+.venv/
+
+# Airflow Local Workspace
+airflow_home/
+*.pid
+*.log
+
+# Python
+.python-version
+__pycache__/
+*.pyc
+.pytest_cache/
